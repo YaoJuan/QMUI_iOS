@@ -354,9 +354,9 @@ static char kAssociatedObjectKey_qmuiNavIsViewWillAppear;
 }
 
 // 重写这个方法才能让 viewControllers 对 statusBar 的控制生效
-- (UIViewController *)childViewControllerForStatusBarStyle {
-    return self.topViewController;
-}
+//- (UIViewController *)childViewControllerForStatusBarStyle {
+//    return self.topViewController;
+//}
 
 #pragma mark - 自定义方法
 
