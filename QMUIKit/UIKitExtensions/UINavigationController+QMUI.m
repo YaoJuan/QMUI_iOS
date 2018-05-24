@@ -47,8 +47,10 @@
 static char originGestureDelegateKey;
 - (void)qmui_viewDidLoad {
     [self qmui_viewDidLoad];
-    objc_setAssociatedObject(self, &originGestureDelegateKey, self.interactivePopGestureRecognizer.delegate, OBJC_ASSOCIATION_ASSIGN);
-    self.interactivePopGestureRecognizer.delegate = (id<UIGestureRecognizerDelegate>)self;
+    
+    // 自己要用自定义的全屏pop by Bryce
+//     objc_setAssociatedObject(self, &originGestureDelegateKey, self.interactivePopGestureRecognizer.delegate, OBJC_ASSOCIATION_ASSIGN);
+//     self.interactivePopGestureRecognizer.delegate = (id<UIGestureRecognizerDelegate>)self;
 }
 
 - (BOOL)canPopViewController:(UIViewController *)viewController {
